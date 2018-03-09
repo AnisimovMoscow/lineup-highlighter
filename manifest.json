@@ -1,0 +1,17 @@
+{
+    "name": "Lineup highlighter",
+    "description": "Подсвечивает игроков",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["https://www.sports.ru/fantasy/football/team/transfers/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "https://www.sports.ru/fantasy/football/team/transfers/*"
+    ],
+    "manifest_version": 2
+}
